@@ -2,53 +2,56 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obrigado!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obrigado - EmoTeen</title>
   <style>
     body {
-      background: #0e0e1a;
-      color: #ffffff;
-      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #eee;
+      font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       margin: 0;
+      text-align: center;
+      padding: 20px;
     }
-
+    .box {
+      background: #222;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 0 10px #4caf50;
+    }
     h1 {
-      font-size: 2.5rem;
-      color: #00ffc3;
+      color: #4caf50;
+      margin-bottom: 20px;
     }
-
     p {
       font-size: 1.2rem;
-      color: #ccc;
-      max-width: 500px;
-      text-align: center;
     }
-
     a {
+      display: inline-block;
       margin-top: 30px;
       text-decoration: none;
-      color: #00ffc3;
-      font-weight: bold;
-      border: 2px solid #00ffc3;
-      padding: 10px 20px;
+      color: #121212;
+      background: #4caf50;
+      padding: 12px 25px;
       border-radius: 8px;
-      transition: all 0.3s ease;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-
     a:hover {
-      background: #00ffc3;
-      color: #0e0e1a;
+      background: #45a049;
     }
   </style>
 </head>
 <body>
-  <h1>Triagem enviada com sucesso!</h1>
-  <p>Recebemos suas respostas. Nossa equipe está avaliando seu caso com carinho e responsabilidade.</p>
-  <a href="https://emo-teen2.vercel.app">Voltar para o site</a>
+  <div class="box">
+    <h1>Obrigado por enviar sua triagem!</h1>
+    <p>Nossa equipe vai analisar suas respostas e entrará em contato em breve.</p>
+    <a href="triagem.html">Voltar para a triagem</a>
+  </div>
 </body>
 </html>
