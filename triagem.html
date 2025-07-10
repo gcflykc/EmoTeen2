@@ -1,232 +1,105 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Triagem EmoTeen</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #1e1e1e;
-      border-radius: 8px;
-    }
-    h2 {
-      text-align: center;
-      color: #00ffc8;
-    }
-    p {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    label {
-      display: block;
-      margin-bottom: 15px;
-    }
-    input[type="text"] {
-      width: 100%;
-      padding: 8px;
-      border-radius: 4px;
-      border: none;
-      margin-top: 5px;
-    }
-    input[type="text"]::placeholder {
-      color: #999;
-    }
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      background-color: #00ffc8;
-      color: #000;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      font-size: 16px;
-      margin-top: 30px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background-color: #00bfa1;
-    }
-  </style>
-</head>
-<body>
+<section id="triagem" class="section">
   <div class="container">
-    <h2>Triagem Emocional - EmoTeen</h2>
-    <p>Responda com sinceridade usando: <strong>Sim</strong>, <strong>Às vezes</strong>, <strong>Quase nunca</strong>, <strong>Não</strong>.</p>
+    <h2>Triagem Emocional</h2>
+    <p>Preencha as respostas com sinceridade. Isso nos ajuda a oferecer o melhor suporte possível.</p>
 
     <form action="https://formsubmit.co/gota7@proton.me" method="POST">
-
-      <label>Nome do aluno:
-        <input type="text" name="nome_aluno" required>
-      </label>
-
-      <label>Série do aluno:
-        <input type="text" name="serie_aluno" required>
-      </label>
-
-      <label>Nome da escola:
-        <input type="text" name="escola" required>
-      </label>
-
-      <!-- As 35 perguntas -->
-      <label>1. Você tem se sentido com pouco interesse ou prazer em fazer coisas?
-        <input type="text" name="q1" required>
-      </label>
-
-      <label>2. Você tem se sentido triste, deprimido(a) ou sem esperança?
-        <input type="text" name="q2" required>
-      </label>
-
-      <label>3. Você tem tido dificuldade para dormir, seja para adormecer, continuar dormindo ou dormir demais?
-        <input type="text" name="q3" required>
-      </label>
-
-      <label>4. Você tem se sentido cansado(a) ou com pouca energia?
-        <input type="text" name="q4" required>
-      </label>
-
-      <label>5. Você tem tido pouco apetite ou comido demais?
-        <input type="text" name="q5" required>
-      </label>
-
-      <label>6. Você tem se sentido mal consigo mesmo(a), como se fosse um fracasso ou tivesse decepcionado sua família?
-        <input type="text" name="q6" required>
-      </label>
-
-      <label>7. Você tem tido dificuldade para se concentrar em coisas, como estudar ou assistir TV?
-        <input type="text" name="q7" required>
-      </label>
-
-      <label>8. Você tem se sentido muito lento(a) ou, ao contrário, muito agitado(a)?
-        <input type="text" name="q8" required>
-      </label>
-
-      <label>9. Você tem pensado em se machucar ou que seria melhor não estar mais aqui?
-        <input type="text" name="q9" required>
-      </label>
-
-      <label>10. Você tem se sentido nervoso(a), ansioso(a) ou no limite?
-        <input type="text" name="q10" required>
-      </label>
-
-      <label>11. Você tem sido incapaz de parar ou controlar suas preocupações?
-        <input type="text" name="q11" required>
-      </label>
-
-      <label>12. Você tem se preocupado demais com várias coisas?
-        <input type="text" name="q12" required>
-      </label>
-
-      <label>13. Você tem tido dificuldade para relaxar?
-        <input type="text" name="q13" required>
-      </label>
-
-      <label>14. Você tem se sentido tão inquieto(a) que é difícil ficar parado(a)?
-        <input type="text" name="q14" required>
-      </label>
-
-      <label>15. Você tem se sentido facilmente irritado(a) ou chateado(a)?
-        <input type="text" name="q15" required>
-      </label>
-
-      <label>16. Você tem sentido medo, como se algo horrível pudesse acontecer?
-        <input type="text" name="q16" required>
-      </label>
-
-      <label>17. Você já pensou em acabar com sua vida ou se machucar de propósito?
-        <input type="text" name="q17" required>
-      </label>
-
-      <label>18. Você tem se sentido isolado(a) ou distante de outras pessoas?
-        <input type="text" name="q18" required>
-      </label>
-
-      <label>19. Você tem tido dificuldade em manter amizades ou relações próximas?
-        <input type="text" name="q19" required>
-      </label>
-
-      <label>20. Você tem se sentido sobrecarregado(a) por responsabilidades escolares?
-        <input type="text" name="q20" required>
-      </label>
-
-      <label>21. Você tem experimentado crises de choro frequentes?
-        <input type="text" name="q21" required>
-      </label>
-
-      <label>22. Você tem sentido que sua vida não tem propósito ou significado?
-        <input type="text" name="q22" required>
-      </label>
-
-      <label>23. Você tem tido episódios de pânico ou ansiedade intensa?
-        <input type="text" name="q23" required>
-      </label>
-
-      <label>24. Você tem se sentido incapaz de enfrentar desafios diários?
-        <input type="text" name="q24" required>
-      </label>
-
-      <label>25. Você tem tido mudanças bruscas de humor?
-        <input type="text" name="q25" required>
-      </label>
-
-      <label>26. Você tem se sentido constantemente exausto(a), mesmo sem motivo aparente?
-        <input type="text" name="q26" required>
-      </label>
-
-      <label>27. Você tem tido pensamentos repetitivos sobre falhas ou erros?
-        <input type="text" name="q27" required>
-      </label>
-
-      <label>28. Você tem sentido dificuldade em tomar decisões simples?
-        <input type="text" name="q28" required>
-      </label>
-
-      <label>29. Você tem praticado ou pensado em automutilação?
-        <input type="text" name="q29" required>
-      </label>
-
-      <label>30. Você tem sentido que ninguém se importa com você?
-        <input type="text" name="q30" required>
-      </label>
-
-      <label>31. Você tem sofrido bullying ou provocações na escola ou online?
-        <input type="text" name="q31" required>
-      </label>
-
-      <label>32. Você tem sentido pressão excessiva de sua família para ter bom desempenho?
-        <input type="text" name="q32" required>
-      </label>
-
-      <label>33. Você tem se sentido pouco confiante em suas habilidades ou aparência?
-        <input type="text" name="q33" required>
-      </label>
-
-      <label>34. Você tem se sentido sozinho(a), mesmo estando com outras pessoas?
-        <input type="text" name="q34" required>
-      </label>
-
-      <label>35. Você tem sentido que nada que você faz é suficiente?
-        <input type="text" name="q35" required>
-      </label>
-
-      <!-- Botão de envio -->
-      <button type="submit" class="btn">Enviar Triagem</button>
-
-      <!-- Proteções do FormSubmit -->
+      <!-- Campos ocultos -->
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://emo-teen2.vercel.app/obrigado.html">
+
+      <!-- Dados do aluno -->
+      <input type="text" name="nome_aluno" placeholder="Nome do aluno" required>
+      <input type="text" name="serie_aluno" placeholder="Série do aluno" required>
+      <input type="text" name="escola_aluno" placeholder="Nome da escola" required>
+
+      <!-- Perguntas -->
+      <style>
+        label { display: block; margin-top: 15px; font-weight: bold; color: #ccc; }
+        select {
+          width: 100%;
+          padding: 8px;
+          margin-top: 5px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          background: #1a1a1a;
+          color: white;
+        }
+      </style>
+
+      <!-- Repetindo as perguntas -->
+      <!-- Cada uma com <label> e <select> -->
+      <!-- Exemplo abaixo para as 35 perguntas -->
+      <!-- Você pode colar esse bloco repetidamente e trocar o texto -->
+
+      <!-- As 35 perguntas abaixo -->
+      <!-- Gabarito de respostas: Sim / Às vezes / Quase nunca / Não -->
+
+      <!-- As perguntas estão numeradas de 1 a 35 -->
+      <!-- Cada "name" é "q1" até "q35" -->
+
+      <!-- Aqui vão todas de uma vez (q1 até q35): -->
+      <script>
+        const perguntas = [
+          "Você tem se sentido com pouco interesse ou prazer em fazer coisas?",
+          "Você tem se sentido triste, deprimido(a) ou sem esperança?",
+          "Você tem tido dificuldade para dormir, seja para adormecer, continuar dormindo ou dormir demais?",
+          "Você tem se sentido cansado(a) ou com pouca energia?",
+          "Você tem tido pouco apetite ou comido demais?",
+          "Você tem se sentido mal consigo mesmo(a), como se fosse um fracasso ou tivesse decepcionado sua família?",
+          "Você tem tido dificuldade para se concentrar em coisas, como estudar ou assistir TV?",
+          "Você tem se sentido muito lento(a) ou, ao contrário, muito agitado(a)?",
+          "Você tem pensado em se machucar ou que seria melhor não estar mais aqui?",
+          "Você tem se sentido nervoso(a), ansioso(a) ou no limite?",
+          "Você tem sido incapaz de parar ou controlar suas preocupações?",
+          "Você tem se preocupado demais com várias coisas?",
+          "Você tem tido dificuldade para relaxar?",
+          "Você tem se sentido tão inquieto(a) que é difícil ficar parado(a)?",
+          "Você tem se sentido facilmente irritado(a) ou chateado(a)?",
+          "Você tem sentido medo, como se algo horrível pudesse acontecer?",
+          "Você já pensou em acabar com sua vida ou se machucar de propósito?",
+          "Você tem se sentido isolado(a) ou distante de outras pessoas?",
+          "Você tem tido dificuldade em manter amizades ou relações próximas?",
+          "Você tem se sentido sobrecarregado(a) por responsabilidades escolares?",
+          "Você tem experimentado crises de choro frequentes?",
+          "Você tem sentido que sua vida não tem propósito ou significado?",
+          "Você tem tido episódios de pânico ou ansiedade intensa?",
+          "Você tem se sentido incapaz de enfrentar desafios diários?",
+          "Você tem tido mudanças bruscas de humor?",
+          "Você tem se sentido constantemente exausto(a), mesmo sem motivo aparente?",
+          "Você tem tido pensamentos repetitivos sobre falhas ou erros?",
+          "Você tem sentido dificuldade em tomar decisões simples?",
+          "Você tem praticado ou pensado em automutilação?",
+          "Você tem sentido que ninguém se importa com você?",
+          "Você tem sofrido bullying ou provocações na escola ou online?",
+          "Você tem sentido pressão excessiva de sua família para ter bom desempenho?",
+          "Você tem se sentido pouco confiante em suas habilidades ou aparência?",
+          "Você tem se sentido sozinho(a), mesmo estando com outras pessoas?",
+          "Você tem sentido que nada que você faz é suficiente?"
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const form = document.querySelector("form");
+          perguntas.forEach((texto, i) => {
+            const label = document.createElement("label");
+            label.textContent = `${i + 1}. ${texto}`;
+            const select = document.createElement("select");
+            select.name = `q${i + 1}`;
+            select.required = true;
+            ["", "Sim", "Às vezes", "Quase nunca", "Não"].forEach(opcao => {
+              const option = document.createElement("option");
+              option.value = opcao;
+              option.textContent = opcao || "Selecione uma opção";
+              select.appendChild(option);
+            });
+            form.appendChild(label);
+            form.appendChild(select);
+          });
+        });
+      </script>
+
+      <br><br>
+      <button type="submit" class="btn">Enviar Triagem</button>
     </form>
   </div>
-</body>
-</html>
+</section>
